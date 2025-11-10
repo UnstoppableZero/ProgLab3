@@ -1,7 +1,7 @@
 OBJECTS = lab3.o main.o
 
 validate_sudoku: $(OBJECTS)
-	gcc -o $@ $(OBJECTS) 
+	gcc -o $@ $(OBJECTS) -lpthread
 
 lab3.o:lab3.c
 	gcc -c lab3.c
